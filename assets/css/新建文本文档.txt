@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>背景图片放置</title>
+</head>
+<body>
+ 
+<div id="Layer1" style="position:absolute; width:100%; height:150%; background-color: snow; z-index:-1; position: relative; transform-style: preserve-3d;">
+ <img src="https://th.bing.com/th/id/OIP.nwrbLT9q-oGcFAxZBn9c3AHaEs?w=273&h=180&c=7&r=0&o=5&pid=1.7" height="100%" width="100%"/>
+ </div>
+ 
+</html>
