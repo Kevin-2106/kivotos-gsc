@@ -299,7 +299,8 @@
     <video id="background_video" loop muted autoplay playsinline></video>
     <div id="video_cover"></div>
     <div id="overlay">
-        <button onclick="unmute()" id="unmute" style="position: absolute; bottom: 1px; right:1px ; display: block;">Unmute</button>
+        <button onclick="mute()" id="mute" style="position: absolute; bottom: 1px; right:1px ; display: none;" class="btn btn1">Mute</button>
+        <button onclick="unmute()" id="unmute" style="position: absolute; bottom: 1px; right:1px ; display: block;" class="btn btn1">Unmute</button>
 
     </div>
 
@@ -344,11 +345,17 @@
 <script src="assets\bideo.js\main.js"></script>
 <script>
     function unmute() {
+        document.querySelector('#background_video').volume=0.05
+        document.querySelector('#background_video').play();
+        
         document.querySelector('#background_video').muted=false;
         document.querySelector('#unmute').style.display="none"
+        document.querySelector('#mute').style.display=""
     }
     function mute() {
         document.querySelector('#background_video').muted=true;
+        document.querySelector('#unmute').style.display=""
+        document.querySelector('#mute').style.display="none"
     }
 </script>
 

@@ -161,9 +161,40 @@ top: 0; right: 0; left: 0; bottom: 0;
 background: rgba(0,0,0,0.5);
 }
 
+/*buttons*/
 
-
-
+.btn {
+    /* 文字颜色 */
+    color: #0099CC; 
+    /* 清除背景色 */
+    background: transparent; 
+    /* 边框样式、颜色、宽度 */
+    border: 2px solid #0099CC;
+    /* 给边框添加圆角 */
+    border-radius: 6px; 
+    /* 字母转大写 */
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Varela Round', 'Noto Sans SC', sans-serif;
+}
+.btn1 {
+    background-color: transparent; 
+    color: black; 
+    border: 0px solid #06BBFA;
+}
+/* 悬停样式 */
+.btn1:hover {
+    background-color: #06BBFA;
+    color: WHITE;
+}
 
 
 
