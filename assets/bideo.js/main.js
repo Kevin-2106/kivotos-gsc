@@ -30,7 +30,6 @@
     // What to do once video loads (initial frame)
     onLoad: function () {
       document.querySelector('#video_cover').style.display = 'none';
-      document.querySelector('#background_video').volume=0.01
     }
   });
 }());
